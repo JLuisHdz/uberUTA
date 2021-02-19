@@ -1,0 +1,32 @@
+
+<div class="datos">
+    <form class="custom-form" method="post">
+      <h1>Datos Personales</h1>
+      <input
+        type="text"
+        [(ngModel)]="nombre"
+        name="nombre"
+        placeholder="Nombre"
+        required="required"
+      />
+      <input
+        type="text"
+        [(ngModel)]="telefono"
+        name="telefono"
+        placeholder="Telefono"
+        required="required"
+      />
+
+      <input
+      type="text"
+      [(ngModel)]="foto"
+      name="foto"
+      placeholder="Foto"
+      required="required"
+    />
+    
+    <input type="text" [(ngModel)] = "rfc_curp" name="rfc-curp"
+    placeholder="Rfc/Curp" required ="required">
+      <button type="submit" (click)="registrardatos()">Registar</button>
+    </form>
+  </div>

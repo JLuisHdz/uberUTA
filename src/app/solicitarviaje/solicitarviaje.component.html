@@ -1,0 +1,44 @@
+
+<div class="viajes">
+    <form class="custom-form" method="post">
+      <h1>Viajes</h1>
+      <input
+        type="text"
+        [(ngModel)]="origen"
+        name="origen"
+        placeholder="Origen"
+        required="required"
+        enable = "false"
+      />
+      <input
+        type="text"
+        [(ngModel)]="destino"
+        name="destino"
+        placeholder="Destino"
+        required="required"
+        enable = "false"
+      />
+
+      <input
+      type="text"
+      [(ngModel)]="fecha"
+      name="fecha"
+      placeholder="Fecha"
+      required="required"
+      enable = "false"
+    />
+
+     <input
+      type="text"
+      [(ngModel)]="hora"
+      name="hora"
+      placeholder="Hora"
+      required="required"
+      enable = "false"
+    />
+
+    <input type="text" [(ngModel)] = "lugares" name="lugares"
+    placeholder="Lugares disponibles" required ="required">
+      <button type="submit" (click)="solicitarviaje()">Solicitar Viaje</button>
+    </form>
+  </div>

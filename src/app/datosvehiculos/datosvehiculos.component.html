@@ -1,0 +1,32 @@
+
+<div class="vehiculos">
+    <form class="custom-form" method="post">
+      <h1>Datos vehiculo</h1>
+      <input
+        type="text"
+        [(ngModel)]="placas"
+        name="placas"
+        placeholder="Placas"
+        required="required"
+      />
+      <input
+        type="text"
+        [(ngModel)]="marca"
+        name="marca"
+        placeholder="Marca"
+        required="required"
+      />
+
+      <input
+      type="date"
+      [(ngModel)]="anio"
+      name="anio"
+      placeholder="Año"
+      required="required"
+    />
+    
+    <input type="text" [(ngModel)] = "color" name="color"
+    placeholder="Color" required ="required">
+      <button type="submit" (click)="registrarvehiculo()">Registar</button>
+    </form>
+  </div>
